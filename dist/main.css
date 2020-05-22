@@ -1,0 +1,12 @@
+canvas {
+  background-image: url(images/bg.png);
+  border: 5px solid green;
+}
+
+.score {
+  width: 6rem;
+  height: 1.5rem;
+  color: blue;
+  font-size: 26px;
+}
+
