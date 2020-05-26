@@ -16,6 +16,17 @@ const config = {
 };
 
 
-const game = new Game(config.board, config.snake);
+let game = new Game(config.board, config.snake);
 game.start();
+
+const resetBtn = document.querySelector('#reset');
+
+resetBtn.addEventListener('click', () => {
+    if (game.isPlaying) {
+        game.end();
+    }
+
+    game = new Game(config.board, config.snake);
+    game.start();
+});
 

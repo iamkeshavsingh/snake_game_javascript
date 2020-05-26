@@ -10,6 +10,7 @@ class Game {
         this.snake = new Snake(snake.init_block_in_snake, snake.size_of_block, snake.color_of_snake, board);
         this.timer = "";
         this.speed = snake.speed;
+        this.isPlaying = true;
 
         document.addEventListener('keydown', (e) => {
             this.snake.state = e.key;
@@ -36,6 +37,7 @@ class Game {
 
     end = () => {
         clearInterval(this.timer);
+        this.isPlaying = false;
         alert("Game is Over");
     }
 

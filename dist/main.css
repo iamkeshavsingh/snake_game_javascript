@@ -10,3 +10,20 @@ canvas {
   font-size: 26px;
 }
 
+.main {
+  display: flex;
+}
+
+#reset {
+  margin-left: 2rem;
+  width: 8rem;
+  height: 2.5rem;
+  background-color: rgb(0, 145, 255);
+  cursor: pointer;
+  color: white;
+  border-radius: 1rem;
+}
+
+#reset:focus {
+  outline: none;
+}
